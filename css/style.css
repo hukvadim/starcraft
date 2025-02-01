@@ -1,0 +1,79 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.6;
+	color: #fff;
+	font-family: "Inter", serif;
+	/* background-color: #010103; */
+	background-color: #191B34;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+	display: inline-flex;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+.font-2 {
+	font-family: "Smooch Sans", serif;
+}
+
+
+.btn {
+	border: 1px solid rgba(255, 255, 255, 0.5);
+	border-radius: 11px;
+	height: 46px;
+	font-weight: 500;
+	font-size: 14px;
+	opacity: 0.7;
+	justify-content: center;
+	align-items: center;
+	transition: 0.3s;
+	padding: 0 24px;
+	gap: 8px;
+}
+
+.btn-sm {
+	padding: 0 14px;
+}
+
+.btn:hover {
+	color: #fff;
+	background-color: #608FF8;
+	border-color: #608FF8;
+	opacity: 1;
+}
+
+
+/* 
+	Верстка блоків
+*/
+.logo {
+	flex-direction: column;
+	line-height: 1.4;
+}
+.logo-name {
+	font-weight: 700;
+	font-size: 18px;
+}
+.logo-desc {
+	font-weight: 300;
+	font-size: 12px;
+	opacity: 0.7;
+}
+
+.header {
+	padding: 44px 0px;
+}
