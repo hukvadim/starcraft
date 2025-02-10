@@ -18,12 +18,23 @@ a {
 	color: #fff;
 	text-decoration: none;
 	display: inline-flex;
+	transition: 0.3s;
+}
+
+ul {
+	list-style: none;
+}
+
+svg {
+	width: 1.6em;
+	height: 1.6em;	
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1260px;
 	margin: 0 auto;
 	padding: 0 30px;
+	position: relative;
 }
 
 .font-2 {
@@ -49,12 +60,53 @@ a {
 	padding: 0 14px;
 }
 
+.btn-lg {
+	padding: 0 44px;
+	height: 64px;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 22px;
+}
+
 .btn:hover {
 	color: #fff;
-	background-color: #608FF8;
+	background-color: #3F68F6;
+	border-color: #3F68F6;
+	opacity: 1;
+}
+
+.btn-discord:hover {
+	background-color: #608FF8;	
+	border-color: #608FF8;
+}
+
+.btn-discord-fill {
+	background-color: #608FF8;	
 	border-color: #608FF8;
 	opacity: 1;
 }
+
+.btn-discord-fill:hover {
+	background-color: #3F68F6;
+	border-color: #3F68F6;
+}
+
+
+.img-cover {
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+}
+.img-cover img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 
 /* 
@@ -76,4 +128,190 @@ a {
 
 .header {
 	padding: 44px 0px;
+	position: relative;
+	z-index: 2;
+}
+.header .container {
+	display: flex;
+	justify-content: flex-start;
+    align-items: center;
+}
+.header .lang {
+	margin-left: 82px;
+}
+
+.header .nav {
+	display: flex;
+	gap: 24px;
+	margin-left: 54px;
+}
+.header .nav-item {
+}
+.header .nav-link {
+	font-weight: 500;
+	font-size: 12px;
+	text-transform: uppercase;
+	opacity: 0.7;
+}
+.header .nav-link:hover { 
+	color: #608FF8;
+	opacity: 1;
+}
+.header .btn-discord {
+	margin: 0 0 0 auto;
+}
+
+
+.main-page {
+	margin-bottom: 145px;
+}
+.main-page .main-page-hold {
+	padding: 65px 0 0 80px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	position: relative;
+	z-index: 2;
+}
+.main-page .main-page-title {
+	font-weight: 700;
+	font-size: 130px;
+	line-height: 92%;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+	position: relative;
+	max-width: 810px;
+}
+
+.main-page .main-page-title::before {
+	content: '';
+	border-left: 1px solid #2aabda;
+	width: 0;
+	height: 81px;
+	display: block;
+	position: absolute;
+    top: 17px;
+    left: -81px;
+}
+
+.main-page .main-page-disk {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	opacity: 0.8;
+	max-width: 730px;
+}
+
+.main-page .main-page-hold-actions {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 40px;
+	margin: 60px 0;
+}
+
+.main-page .btn-discord {
+}
+
+.main-page .main-page-action-info {
+	font-weight: 500;
+	font-size: 20px;
+	opacity: 0.7;
+}
+.main-page .main-page-action-info .icon {
+	position: relative;
+    top: 6px;
+    font-size: 18px;
+    margin: 0 8px 0 0;
+}
+.main-page .video-hold {
+	position: absolute;
+    top: -150px;
+    right: -180px;
+	border-radius: 50%;
+	z-index: 0;
+	width: 1217px;
+	height: 862px;
+	border: 1px solid rgb(25,27,52);
+	outline: 1px solid rgb(25,27,52);
+}
+.main-page .video-hold::before {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	background: rgb(25,27,52);
+	background: radial-gradient(circle, rgba(25,27,52,0) 0%, rgba(25,27,52,1) 64%, rgba(25,27,52,1) 100%);
+}
+.main-page .video-hold .abs-bg-video {
+	width: 100%;
+	height: auto;
+
+}
+.partners {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 142px;
+}
+.partners .partners-title {
+	font-weight: 700;
+	font-size: 75px;
+	line-height: 92%;
+	text-transform: uppercase;
+}
+.partners .partners-list {
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+}
+.partners .partners-item {
+}
+.partners .partners-img {
+}
+
+.preferences {
+	margin-bottom: 180px;
+}
+.preferences .preferences-title {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.preferences .preferences-desc {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	opacity: 0.8;
+	margin-bottom: 30px;
+}
+.prefernces-img {
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 40px;
+	width: 100%;
+	max-width: 540px;
+	height: auto;
+}
+.preferences .preferences-hold {
+	display: flex;
+	gap: 70px;
+}
+.preferences .preferences-text-hold {
+	width: 50%;
+}
+.preferences .preferences-img-hold {
+	width: 50%;
+}
+.preferences:nth-child(even) .preferences-text-hold {
+	order: 2;
+}
+.preferences:nth-child(even) .preferences-img-hold {
+	order: 1;
+}
+
+
+.preferences-1 {
 }
