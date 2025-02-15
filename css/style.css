@@ -253,7 +253,7 @@ svg {
 	display: flex;
 	align-items: center;
 	justify-content: flex-start;
-	gap: 142px;
+	gap: 110px;
 }
 .partners .partners-title {
 	font-weight: 700;
@@ -269,6 +269,9 @@ svg {
 .partners .partners-item {
 }
 .partners .partners-img {
+	width: 100px;
+	height: auto;
+	border-radius: 10px;
 }
 
 .preferences {
@@ -297,6 +300,7 @@ svg {
 }
 .preferences .preferences-hold {
 	display: flex;
+	align-items: center;
 	gap: 70px;
 }
 .preferences .preferences-text-hold {
@@ -304,6 +308,13 @@ svg {
 }
 .preferences .preferences-img-hold {
 	width: 50%;
+}
+.preferences img.preferences-img {
+
+}
+.preferences video.preferences-img {
+	width: 100%;
+	height: auto;
 }
 .preferences:nth-child(even) .preferences-text-hold {
 	order: 2;
