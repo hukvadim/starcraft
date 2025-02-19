@@ -90,7 +90,37 @@ svg {
 	background-color: #3F68F6;
 	border-color: #3F68F6;
 }
+.btn-play {
+	border: 1px solid #fff;
+	border-radius: 50%;
+	width: 80px;
+	height: 80px;
+	background: rgba(254, 254, 254, 0.2);
+	cursor: pointer;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	transition: 0.3s;
+}
+.btn-play .icon {
+	margin-right: -7px;
+}
+.btn-play:hover {
+	background: #ea3223;
+	border-color: #ea3223;
+}
 
+
+.relative {
+	position: relative;
+}
+
+.absolute-center {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .img-cover {
     display: inline-block;
@@ -336,4 +366,57 @@ svg {
 
 
 .preferences-1 {
+}
+
+
+
+
+
+.lessons {
+	padding-bottom: 30px;
+}
+
+.lessons-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 75px;
+	line-height: 92%;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 80px;
+	}
+
+.card-list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 68px;
+}
+.card-lesson {
+	width: 100%;
+	max-width: 355px;
+}
+.card-lesson .btn-play {
+	
+}
+.card-lesson-img-hold {
+	position: relative;
+}
+.card-lesson-img {
+	border-radius: 40px;
+	width: 100%;
+	display: block;
+}
+.card-lesson-title {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 145%;
+	color: #fff;
+	margin: 35px 0 20px 0;
+}
+.card-lesson-disc {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	color: #fff;
 }

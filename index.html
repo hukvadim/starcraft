@@ -28,6 +28,7 @@
 				<path d="M3.25161 5.49076C5.77259 3.60426 8.18797 3.65728 8.18797 3.65728L8.43481 3.93932C5.43775 4.83846 4.04493 6.16066 4.04493 6.16066C8.33295 3.79984 13.7947 3.81678 18.2547 6.16066C18.2547 6.16066 16.8091 4.76784 13.6356 3.8687L13.8118 3.65706C13.8118 3.65706 16.2096 3.60426 18.7482 5.49054C18.7482 5.49054 21.287 10.0566 21.287 15.6807C21.287 15.6807 19.8059 18.2195 15.9097 18.3429C15.9097 18.3429 15.2574 17.5672 14.7286 16.8973C16.9675 16.2274 17.8138 14.8346 17.8138 14.8346C16.4072 15.7148 14.9849 16.2657 13.2123 16.6153C10.3286 17.2088 6.74147 16.5986 4.06231 14.8346C4.06231 14.8346 4.94385 16.2626 7.25341 16.9149C6.72453 17.5672 6.08983 18.3253 6.08983 18.3253C2.19363 18.2019 0.712807 15.6631 0.712807 15.6809C0.713026 10.0569 3.25161 5.49076 3.25161 5.49076ZM14.2879 14.0413C15.2753 14.0413 16.0862 13.1773 16.0862 12.102C16.014 9.52644 12.5437 9.53436 12.4896 12.102C12.4896 13.1773 13.2832 14.0413 14.2879 14.0413ZM7.85313 14.0413C8.84049 14.0413 9.65141 13.1773 9.65141 12.102C9.57221 9.5315 6.14527 9.5304 6.05485 12.102C6.05485 13.1773 6.84817 14.0413 7.85313 14.0413Z"/>
 			</symbol>
 			<symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></symbol>
+			<symbol id="icon-play" viewBox="0 0 16 18" fill="currentColor"><path d="M15.5851 9.20312L0.763672 17.4397C0.592541 17.5365 0.443731 17.5476 0.317243 17.4732C0.198196 17.3988 0.138672 17.2649 0.138672 17.0714V0.642856C0.138672 0.449404 0.198196 0.315476 0.317243 0.241071C0.443731 0.166666 0.592541 0.177827 0.763672 0.274553L15.5851 8.51116C15.7562 8.60789 15.8418 8.72321 15.8418 8.85714C15.8418 8.99107 15.7562 9.1064 15.5851 9.20312Z"/></symbol>
 		</svg>
 	</div>
 
@@ -141,7 +142,10 @@
 					<p class="preferences-desc">You will be introduced to a new faction with custom units, voices, animations, and abilities. You will meet several powerful heroes whose names never made it into the history books. At least not the ones published by the UED many years later.</p>
 					
 				</div>
-				<div class="preferences-img-hold">
+				<div class="preferences-img-hold relative">
+					<div class="btn-play absolute-center">
+						<svg class="icon"><use href="#icon-play"></use></svg>
+					</div>
 					<video class="prefernces-img" autoplay="autoplay" loop="loop" muted="muted" width="2800" height="2100" poster="./img/video/landscape.jpg">
 						<source src="./img/video/landscape.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
 						<source src="./img/video/landscape.mp4" type=" video/mp4; codecs=&quot;theora, vorbis&quot;">
@@ -170,6 +174,57 @@
 
 		</div>
 	</div>
+
+	
+	<div class="lessons">
+		<div class="container">
+
+			<h2 class="lessons-title font-2">Video lessons</h2>
+
+
+			<div class="card-list">
+
+				<div class="card-lesson">
+					
+					<div class="card-lesson-img-hold relative">
+						<div class="btn-play absolute-center">
+							<svg class="icon"><use href="#icon-play"></use></svg>
+						</div>
+						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+					</div>
+					<h3 class="card-lesson-title">GiantGrantGames – UED: First Light Review</h3>
+					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+				</div>
+				<div class="card-lesson">
+					
+					<div class="card-lesson-img-hold relative">
+						<div class="btn-play absolute-center">
+							<svg class="icon"><use href="#icon-play"></use></svg>
+						</div>
+						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+					</div>
+					<h3 class="card-lesson-title">GiantGrantGames – UED: First Light Review</h3>
+					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+				</div>
+				<div class="card-lesson">
+					
+					<div class="card-lesson-img-hold relative">
+						<div class="btn-play absolute-center">
+							<svg class="icon"><use href="#icon-play"></use></svg>
+						</div>
+						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+					</div>
+					<h3 class="card-lesson-title">GiantGrantGames – UED: First Light Review</h3>
+					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+				</div>
+
+			</div>
+
+
+		</div>
+	</div>
+	
+
 
 
 </body>
