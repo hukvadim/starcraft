@@ -1,0 +1,53 @@
+
+.preferences {
+	margin-bottom: 180px;
+}
+.preferences .preferences-title {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 100%;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+}
+.preferences .preferences-desc {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 150%;
+	opacity: 0.8;
+	margin-bottom: 30px;
+}
+.prefernces-img {
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	border-radius: 40px;
+	width: 100%;
+	max-width: 540px;
+	height: auto;
+}
+.preferences .preferences-hold {
+	display: flex;
+	align-items: center;
+	gap: 70px;
+}
+.preferences .preferences-text-hold {
+	width: 50%;
+}
+.preferences .preferences-img-hold {
+	width: 50%;
+}
+.preferences img.preferences-img {
+
+}
+.preferences video.preferences-img {
+	width: 100%;
+	height: auto;
+}
+.preferences:nth-child(even) .preferences-text-hold {
+	order: 2;
+}
+.preferences:nth-child(even) .preferences-img-hold {
+	order: 1;
+}
+
+
+.preferences-1 {
+}

@@ -1,0 +1,24 @@
+.partners {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 110px;
+}
+.partners .partners-title {
+	font-weight: 700;
+	font-size: 75px;
+	line-height: 92%;
+	text-transform: uppercase;
+}
+.partners .partners-list {
+	display: flex;
+	width: 100%;
+    justify-content: space-between;
+}
+.partners .partners-item {
+}
+.partners .partners-img {
+	width: 100px;
+	height: auto;
+	border-radius: 10px;
+}

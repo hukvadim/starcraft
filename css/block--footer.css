@@ -1,0 +1,32 @@
+.footer {
+	padding: 186px 0 50px;
+}
+.footer .nav-top {
+	border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+	padding-bottom: 45px;
+    margin-bottom: 45px;
+}
+
+.footer-text {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 30px;
+}
+.footer-info {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	color: #fff;
+	max-width: 470px;
+}
+
+.footer .nav-terms {}
+.footer .nav-terms .nav-item {}
+.footer .nav-terms .nav-link {
+	text-transform: none;
+}
+.footer .nav-terms .nav-link .icon {
+	position: relative;
+	top: 5px;
+}

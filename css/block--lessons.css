@@ -1,0 +1,49 @@
+
+.lessons {
+	padding-bottom: 30px;
+}
+
+.lessons-title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 75px;
+	line-height: 92%;
+	text-transform: uppercase;
+	color: #fff;
+	margin-bottom: 80px;
+	}
+
+.card-list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 68px;
+}
+.card-lesson {
+	width: 100%;
+	max-width: 355px;
+}
+.card-lesson .btn-play {
+	
+}
+.card-lesson-img-hold {
+	position: relative;
+}
+.card-lesson-img {
+	border-radius: 40px;
+	width: 100%;
+	display: block;
+}
+.card-lesson-title {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 145%;
+	color: #fff;
+	margin: 35px 0 20px 0;
+}
+.card-lesson-disc {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 162%;
+	color: #fff;
+}
