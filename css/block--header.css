@@ -1,7 +1,16 @@
 .header {
 	padding: 44px 0px;
-	position: relative;
-	z-index: 2;
+	z-index: 99;
+	position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+	transition: .3s;
+}
+.header.scroll-down {
+	padding: 18px 0px;
+	background-color: #191B34;
+	box-shadow: 0 0 20px 0 #02101d;
 }
 .header .container {
 	display: flex;

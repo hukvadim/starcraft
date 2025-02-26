@@ -1,0 +1,33 @@
+import { bodyHtml, modalHtml, btnListVideoPlay, modalIframe } from './elements.js';
+
+// Функція для показу модального вікна з відео
+export function setModalVideo(event) {
+	
+	// Додаємо в body клас, щоб показати модальне вікно
+	bodyHtml.classList.add('modal-show');
+
+	// Також добавляємо клас на модалку, щоб її показати
+	modalHtml.classList.add('active');
+
+	// Відбираємо дані про відео
+	const videoId = event.target.getAttribute('data-modal-video');
+	
+	// Поміщаємо помилання в iframe
+	modalIframe.setAttribute('src', 'https://www.youtube.com/embed/' + videoId + '?autoplay=1&rel=0&vq=720');
+}
+
+// Перебираємо всі кнопки за якими потрібно слідкувати
+if (btnListVideoPlay) {	
+	btnListVideoPlay.forEach(element => {
+		
+		// Слідкуємо за кліком поточної кнопки
+		element.onclick = setModalVideo;
+	});
+}
+
+// Слідкуємо за кліком по модальному вікні, щоб його приховати
+modalHtml.onclick = () => {
+	modalHtml.classList.remove('active');
+	bodyHtml.classList.remove('modal-show');
+	modalIframe.removeAttribute('src');
+}

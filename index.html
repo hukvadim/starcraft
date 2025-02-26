@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="home">
 
 	<div hidden="hidden" class="null-svg-elements">
 		<svg xmlns="http://www.w3.org/2000/svg">
@@ -43,11 +43,11 @@
 			<a href="#" class="lang btn btn-sm">EN</a>
 
 			<ul class="nav">
-				<li class="nav-item"><a href="" class="nav-link">Home</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Parnters</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Preferences</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Lessons</a></li>
-				<li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+				<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#parnters" class="nav-link">Parnters</a></li>
+				<li class="nav-item"><a href="#preferences" class="nav-link">Preferences</a></li>
+				<li class="nav-item"><a href="#lessons" class="nav-link">Lessons</a></li>
+				<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
 			</ul>
 
 			<a href="#" class="btn btn-discord">				
@@ -74,7 +74,7 @@
 					</p>
 				</div>
 
-				<div class="partners">
+				<div class="partners" id="parnters">
 
 					<h2 class="partners-title font-2">Partners</h2>
 	
@@ -112,21 +112,34 @@
 			
 		</div>
 	</section>
+	
 
 
-	<div class="preferences preferences-1">
+	<div class="preferences preferences-1" id="preferences">
 		<div class="container">
 
 			<div class="preferences-hold">
 				<div class="preferences-text-hold">
-					<h2 class="preferences-title font-2">Variat image</h2>
-					<p class="preferences-desc">You will be introduced to a new faction with custom units, voices, animations, and abilities. You will meet several powerful heroes whose names never made it into the history books. At least not the ones published by the UED many years later.</p>
-					<a href="#" class="btn btn-lg">				
+					<h2 class="preferences-title font-2">Visualize your creativity in the landscape and enjoy the result</h2>
+					<p class="preferences-desc">Use the powerful editor "StarCraft 2” to showcase your vision for the landscape. Bring your own version of the Coprulus Sector to life in a map where tactics meet creativity and enjoy the beauty of battle on fields created by your hands</p>
+					<!-- <a href="#" class="btn btn-lg">				
 						Discord
-					</a>
+					</a> -->
 				</div>
 				<div class="preferences-img-hold">
-					<img src="./img/preferences.png" alt="#" class="prefernces-img">
+					<!-- <img src="./img/preferences.png" alt="#" class="preferences-img"> -->
+					<div class="img-comp-container preferences-img">
+						<div class="img-comp-img">
+							<video class="img-item" autoplay="autoplay" loop="loop" muted="muted" width="2800" height="2100" poster="./img/video/landscape.png">
+								<source src="./img/video/landscape.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+								<source src="./img/video/landscape.mp4" type=" video/mp4; codecs=&quot;theora, vorbis&quot;">
+								<source src="./img/video/landscape.mp4" type=" video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2, vorbis&quot;">
+							</video>
+						</div>
+						<div class="img-comp-img img-comp-overlay">
+							<img src="./img/preferences.png" width="300" height="200" class="img-item">
+						</div>
+					</div>
 				</div>
 			</div>
 
@@ -146,7 +159,7 @@
 					<div class="btn-play absolute-center">
 						<svg class="icon"><use href="#icon-play"></use></svg>
 					</div>
-					<video class="prefernces-img" autoplay="autoplay" loop="loop" muted="muted" width="2800" height="2100" poster="./img/video/landscape.jpg">
+					<video class="preferences-img" autoplay="autoplay" loop="loop" muted="muted" width="2800" height="2100" poster="./img/video/landscape.png">
 						<source src="./img/video/landscape.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
 						<source src="./img/video/landscape.mp4" type=" video/mp4; codecs=&quot;theora, vorbis&quot;">
 						<source src="./img/video/landscape.mp4" type=" video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2, vorbis&quot;">
@@ -168,7 +181,7 @@
 					
 				</div>
 				<div class="preferences-img-hold">
-					<img src="./img/preferences.png" alt="#" class="prefernces-img">
+					<img src="./img/preferences.png" alt="#" class="preferences-img">
 				</div>
 			</div>
 
@@ -176,7 +189,7 @@
 	</div>
 
 	
-	<div class="lessons">
+	<div class="lessons" id="lessons">
 		<div class="container">
 
 			<h2 class="lessons-title font-2">Video lessons</h2>
@@ -184,38 +197,40 @@
 
 			<div class="card-list">
 
+
 				<div class="card-lesson">
-					
-					<div class="card-lesson-img-hold relative">
-						<div class="btn-play absolute-center" data-modal-video="uOj3XV8TV8I">
+					<div class="card-lesson-img-hold relative img-cover">
+						<div class="btn-play absolute-center" data-modal-video="eASuMaQURno">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
-						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+						<img src="./img/lessons/Screenshot_1.jpg" alt="" class="card-lesson-img">
 					</div>
-					<h3 class="card-lesson-title">111 GiantGrantGames – UED: First Light Review</h3>
-					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+					<h3 class="card-lesson-title">6 weird things I found in the Starcraft 2 editor</h3>
+					<p class="card-lesson-disc">I've been using the Starcraft 2 Galaxy editor to make goofy lil movies for about a year now, here's some weird stuff I've found.</p>
 				</div>
+
+
 				<div class="card-lesson">
-					
-					<div class="card-lesson-img-hold relative">
-						<div class="btn-play absolute-center" data-modal-video="uOj3XV8TV8I">
+					<div class="card-lesson-img-hold relative img-cover">
+						<div class="btn-play absolute-center" data-modal-video="-8-yeu9f3mQ">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
-						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+						<img src="./img/lessons/Screenshot_2.jpg" alt="" class="card-lesson-img">
 					</div>
-					<h3 class="card-lesson-title">GiantGrantGames – UED: First Light Review</h3>
-					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+					<h3 class="card-lesson-title">Teaching SC2 Editor; Arcade Trigger Basics</h3>
+					<p class="card-lesson-disc">Trying out streaming for the second time in an attempt to teach others how to use the SC2 editor, being that apparently people want to see that.</p>
 				</div>
+
+
 				<div class="card-lesson">
-					
-					<div class="card-lesson-img-hold relative">
-						<div class="btn-play absolute-center" data-modal-video="uOj3XV8TV8I">
+					<div class="card-lesson-img-hold relative img-cover">
+						<div class="btn-play absolute-center" data-modal-video="xI7tMIOnRmU">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
-						<img src="./img/lessons/image.jpg" alt="" class="card-lesson-img">
+						<img src="./img/lessons/Screenshot_3.jpg" alt="" class="card-lesson-img">
 					</div>
-					<h3 class="card-lesson-title">GiantGrantGames – UED: First Light Review</h3>
-					<p class="card-lesson-disc">All frequently used elements are now in symbols. Use them to create interfaces really.</p>
+					<h3 class="card-lesson-title">StarCraft II Editor Tutorial - Rising Lava</h3>
+					<p class="card-lesson-disc">In this tutorial I show you how to make rising lava in your map. It's very similar to the mission 'The Devil's Playground' in Wings of Liberty.</p>
 				</div>
 
 			</div>
@@ -225,14 +240,14 @@
 	</div>
 	
 
-  <footer class="footer">
+  <footer class="footer" id="contacts">
     <div class="container">
 		<ul class="nav nav-top">
-			<li class="nav-item"><a href="" class="nav-link">Home</a></li>
-			<li class="nav-item"><a href="" class="nav-link">Parnters</a></li>
-			<li class="nav-item"><a href="" class="nav-link">Preferences</a></li>
-			<li class="nav-item"><a href="" class="nav-link">Lessons</a></li>
-			<li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+			<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+			<li class="nav-item"><a href="#parnters" class="nav-link">Parnters</a></li>
+			<li class="nav-item"><a href="#preferences" class="nav-link">Preferences</a></li>
+			<li class="nav-item"><a href="#lessons" class="nav-link">Lessons</a></li>
+			<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
 		</ul>
 		<div class="footer-text">
 			<a href="#" class="logo">
@@ -240,7 +255,7 @@
 				<span class="logo-desc">Education modding and toolbox</span>
 			</a>
 			<p class="footer-info">
-				Startup Framework contains components and complex blocks which can easily be integrated into almost any design. 
+				EMaTbox: A community of enthusiasts that provides tools for learning and implementing ideas in the mapmaking industry. Create, modify, experiment, and explore the world of the game in a new way. Free materials, streams/tutorials, and tools (GalaxyScript, XML, GUI) will help you to do it.
 			</p>
 			<ul class="nav nav-terms">
 				<li class="nav-item"><a href="" class="nav-link">Privacy Policy</a></li>
@@ -259,7 +274,7 @@
 
 
 
-  <script src="./js/script.js"></script>
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>

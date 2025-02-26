@@ -1,10 +1,9 @@
-
 .preferences {
 	margin-bottom: 180px;
 }
 .preferences .preferences-title {
 	font-weight: 700;
-	font-size: 60px;
+	font-size: 55px;
 	line-height: 100%;
 	text-transform: uppercase;
 	margin-bottom: 30px;
@@ -16,12 +15,12 @@
 	opacity: 0.8;
 	margin-bottom: 30px;
 }
-.prefernces-img {
+.preferences .preferences-img {
 	border: 2px solid rgba(255, 255, 255, 0.4);
 	border-radius: 40px;
 	width: 100%;
 	max-width: 540px;
-	height: auto;
+	overflow: hidden;
 }
 .preferences .preferences-hold {
 	display: flex;
@@ -35,7 +34,7 @@
 	width: 50%;
 }
 .preferences img.preferences-img {
-
+	height: auto;
 }
 .preferences video.preferences-img {
 	width: 100%;
@@ -50,4 +49,48 @@
 
 
 .preferences-1 {
+}
+
+
+
+.img-comp-container {
+	--img-w: 560px;
+	--img-h: 304px;
+
+	position: relative;
+	user-select: none;
+	height: var(--img-h); /*should be the same height as the images*/
+}
+
+.img-comp-img {
+	position: absolute;
+	width: auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.img-comp-img .img-item {
+	display: block;
+	vertical-align: middle;
+	width: var(--img-w);
+	height: var(--img-h);
+}
+
+.img-comp-slider {
+	--size: 50px;
+	position: absolute;
+    z-index: 9;
+    cursor: ew-resize;
+    width: var(--size);
+    height: var(--size);
+    background-color: rgba(25, 27, 52, 0.712);
+    opacity: 1;
+    border-radius: 50%;
+    background-image: url(../img/icons/gesture.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+}
+.img-comp-slider:hover {
+	background-color: rgba(25, 27, 52, 1);
 }

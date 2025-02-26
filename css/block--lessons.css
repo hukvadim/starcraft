@@ -15,19 +15,24 @@
 
 .card-list {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: space-between;
 	gap: 68px;
 }
 .card-lesson {
 	width: 100%;
-	max-width: 355px;
+	max-width: 354px;
 }
 .card-lesson .btn-play {
-	
+	z-index: 5;
 }
 .card-lesson-img-hold {
 	position: relative;
+}
+.card-lesson-img-hold.img-cover {
+	width: 100%;
+	min-height: 350px;
 }
 .card-lesson-img {
 	border-radius: 40px;
