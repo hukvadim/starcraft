@@ -48,6 +48,7 @@
 				<li class="nav-item"><a href="#preferences" class="nav-link">Preferences</a></li>
 				<li class="nav-item"><a href="#lessons" class="nav-link">Lessons</a></li>
 				<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+				<li class="nav-item"><a href="#feedback" data-modal-toggle="modal-feedback" class="nav-link">Feedback</a></li>
 			</ul>
 
 			<a href="#" class="btn btn-discord">				
@@ -200,7 +201,7 @@
 
 				<div class="card-lesson">
 					<div class="card-lesson-img-hold relative img-cover">
-						<div class="btn-play absolute-center" data-modal-video="eASuMaQURno">
+						<div class="btn-play absolute-center" data-modal-toggle="modal-video-iframe" data-modal-video="eASuMaQURno">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
 						<img src="./img/lessons/Screenshot_1.jpg" alt="" class="card-lesson-img">
@@ -212,7 +213,7 @@
 
 				<div class="card-lesson">
 					<div class="card-lesson-img-hold relative img-cover">
-						<div class="btn-play absolute-center" data-modal-video="-8-yeu9f3mQ">
+						<div class="btn-play absolute-center" data-modal-toggle="modal-video-iframe" data-modal-video="-8-yeu9f3mQ">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
 						<img src="./img/lessons/Screenshot_2.jpg" alt="" class="card-lesson-img">
@@ -224,7 +225,7 @@
 
 				<div class="card-lesson">
 					<div class="card-lesson-img-hold relative img-cover">
-						<div class="btn-play absolute-center" data-modal-video="xI7tMIOnRmU">
+						<div class="btn-play absolute-center" data-modal-toggle="modal-video-iframe" data-modal-video="xI7tMIOnRmU">
 							<svg class="icon"><use href="#icon-play"></use></svg>
 						</div>
 						<img src="./img/lessons/Screenshot_3.jpg" alt="" class="card-lesson-img">
@@ -248,6 +249,7 @@
 			<li class="nav-item"><a href="#preferences" class="nav-link">Preferences</a></li>
 			<li class="nav-item"><a href="#lessons" class="nav-link">Lessons</a></li>
 			<li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
+			<li class="nav-item"><a href="#feedback" data-modal-toggle="modal-feedback" class="nav-link">Feedback</a></li>
 		</ul>
 		<div class="footer-text">
 			<a href="#" class="logo">
@@ -266,9 +268,15 @@
     </div>
   </footer>
 
-  <div class="modal">
+  <div class="modal" id="modal-video-iframe" data-modal-toggle="modal-video-iframe">
 	<div class="modal-content">
 		<iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</div>
+  </div>
+
+  <div class="modal" id="modal-feedback" data-modal-toggle="modal-feedback">
+	<div class="modal-content">
+		feedback
 	</div>
   </div>
 
